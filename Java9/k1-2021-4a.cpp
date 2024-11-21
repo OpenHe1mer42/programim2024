@@ -18,20 +18,25 @@ int main()
     }
 
     double mesatarja = shuma / 5.0;
+    cout << "Mesatarja eshte: "<< mesatarja<< endl;
 
-    int numriNegativ = 0;
+    int numri = 0;
 
     for (int i = 0; i < 7; i++)
     {
         // antari i mesem eshte i= 3
-        if (i != 3)
-        {
+       
             if (A[i] < 0)
             {
-                numriNegativ++;
+                 if (i != 3)
+                 {
+                      numri++;
+                 }
+               
             }
-        }
+        
     }
+    cout << "Numëra Negative jane: " << numri;
 
     return 0;
 }
